@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    background-color: white;
+    /* background-image: url('your-image-url'); */ /* Remove or comment out this line */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+}   
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Make label text bold */
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #002145;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold; /* Make button text bold */
+}
+
+button:hover {
+    background-color: #002145;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #002145;
+    color: white;
+}
