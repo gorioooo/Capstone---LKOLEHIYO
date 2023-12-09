@@ -17,7 +17,7 @@ body {
     width: 250px;
     position: absolute;
     background-color: #002145;
-    padding-top: 130px;
+    padding-top: 80px;
     transition: 0.3s;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 .sidenav img {
-    height: 150px;
+    height: 140px;
     margin-left: 50px;
     margin-right: auto;
 
