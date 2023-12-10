@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Students</title>
 </head>
+
+<button type="button" onclick="goBack()">Back</button>
+
 <body>
     <div class="container">
         <div class="grade">
@@ -15,9 +18,17 @@
         </div>
 
         <div class="student-info">
-            <a href="student_info.php">Add students</a>
+            <a href="student_info.php">Add Students</a>
+        </div>
+
+        <div class="student-schedule">
+            <a href="student_schedule.php">Add Schedule</a>
         </div>
     </div>
-
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>

@@ -85,19 +85,19 @@
 </head>
 <body>
 
-<h2>Add/Edit Student Grades</h2>
+<h2>Add/Edit Student Schedule</h2>
 
 <form action="process.php" method="post">
     <button type="button" onclick="goBack()">Back</button>
     <label for="student_id">Student ID:</label>
     <input type="text" name="student_id" required>
 
-    <!-- Subjects and Grades -->
+    <!-- Subjects  -->
     <div>
         <?php for ($i = 1; $i <= 10; $i++) : ?>
             <label class="subject-column" for="subject<?= $i ?>_select">Subject <?= $i ?>:</label>
             <select class="subject-column" name="subject<?= $i ?>_select" required>
-            <option value="Schedule1">Math</option>
+                <option value="Schedule1">Math</option>
                 <option value="Schedule2">Math</option>
                 <option value="Schedule3">Math</option>
                 <option value="Schedule4">Math</option>
@@ -109,12 +109,10 @@
                 <option value="Schedule10">Math</option>
                 <!-- Add more options as needed -->
             </select>
-            <label class="grade-column" for="grade<?= $i ?>">Grade:</label>
-            <input class="grade-column" type="text" name="grade<?= $i ?>" required>
         <?php endfor; ?>
     </div>
 
-    <input type="submit" value="Add/Edit Grade">
+    <input type="submit" value="Add/Edit Schedule">
 </form>
 
 <h2>Search and Edit Grades</h2>
