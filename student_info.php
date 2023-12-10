@@ -8,8 +8,8 @@
     <title>Students</title>
 </head>
 <body>
+    <button type="button" onclick="goBack()">Back</button>
 
-    <h2>LETRAN STUDENTS</h2>
 
     <form id="studentForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="studentName">Student Name:</label>
@@ -29,7 +29,7 @@
 
         <!-- Other form fields remain unchanged -->
 
-        <button type="submit" name="submitForm">Submit</button>
+        <button2 type="submit" name="submitForm">Submit</button2>
     </form>
 
     <?php
@@ -71,5 +71,11 @@
     // Close the database connection at the end of your script
     $conn->close();
     ?>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
 </body>
 </html>
