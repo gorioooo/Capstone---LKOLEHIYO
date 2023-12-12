@@ -97,20 +97,20 @@
         <?php for ($i = 1; $i <= 10; $i++) : ?>
             <label class="subject-column" for="subject<?= $i ?>_select">Subject <?= $i ?>:</label>
             <select class="subject-column" name="subject<?= $i ?>_select" required>
-            <option value="Schedule1">Math</option>
-                <option value="Schedule2">Math</option>
-                <option value="Schedule3">Math</option>
-                <option value="Schedule4">Math</option>
-                <option value="Schedule5">Math</option>
-                <option value="Schedule6">Math</option>
-                <option value="Schedule7">Math</option>
-                <option value="Schedule8">Math</option>
-                <option value="Schedule9">Math</option>
-                <option value="Schedule10">Math</option>
+                <option value="FILIPINO SA PILING LARANGAN">FILIPINO SA PILING LARANGAN</option>
+                <option value="JAVA PROGRAMMING">JAVA PROGRAMMING</option>
+                <option value="PERSONAL DEVELOPMENT">PERSONAL DEVELOPMENT</option>
+                <option value="ORAL COMMUNICATION IN CONTEXT<">ORAL COMMUNICATION IN CONTEXT</option>
+                <option value="GEN - MATH">GEN - MATH</option>
+                <option value="SALVATION HISTORY">SALVATION HISTORY</option>
+                <option value="COMPUTER PROGRAMMING">COMPUTER PROGRAMMING</option>
+                <option value="KOMUNIKASYON AT PANANALIKSIK SA WIKA AT KULTURANG FILIPINO">KOMUNIKASYON AT PANANALIKSIK SA WIKA AT KULTURANG FILIPINO</option>
+                <option value="ENGLISH FOR ACADEMIC AND PROFESSIONAL PURPOSES">ENGLISH FOR ACADEMIC AND PROFESSIONAL PURPOSES</option>
+                <option value="Math">Math</option>
                 <!-- Add more options as needed -->
             </select>
-            <label class="grade-column" for="grade<?= $i ?>">Grade:</label>
-            <input class="grade-column" type="text" name="grade<?= $i ?>" required>
+            <label class="grade-column" for="value<?= $i ?>">Grade:</label>
+            <input class="grade-column" type="text" name="value<?= $i ?>" required>
         <?php endfor; ?>
     </div>
 
