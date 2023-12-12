@@ -87,7 +87,7 @@
 
 <h2>Add/Edit Student Schedule</h2>
 
-<form action="process.php" method="post">
+<form action="add_schedule.php" method="post">
     <button type="button" onclick="goBack()">Back</button>
     <label for="student_id">Student ID:</label>
     <input type="text" name="student_id" required>
@@ -99,16 +99,16 @@
         <?php for ($i = 1; $i <= 10; $i++) : ?>
             <label class="subject-column" for="subject<?= $i ?>_select">Subject <?= $i ?>:</label>
             <select class="subject-column" name="subject<?= $i ?>_select" required>
-                <option value="Schedule1">FILIPINO SA PILING LARANGAN</option>
-                <option value="Schedule2">JAVA PROGRAMMING</option>
-                <option value="Schedule3">PERSONAL DEVELOPMENT</option>
-                <option value="Schedule4">ORAL COMMUNICATION IN CONTEXT</option>
-                <option value="Schedule5">GEN - MATH</option>
-                <option value="Schedule6">SALVATION HISTORY</option>
-                <option value="Schedule7">COMPUTER PROGRAMMING</option>
-                <option value="Schedule8">KOMUNIKASYON AT PANANALIKSIK SA WIKA AT KULTURANG FILIPINO</option>
-                <option value="Schedule9">ENGLISH FOR ACADEMIC AND PROFESSIONAL PURPOSES</option>
-                <option value="Schedule10">Math</option>
+                <option value="FILIPINO SA PILING LARANGAN">FILIPINO SA PILING LARANGAN</option>
+                <option value="JAVA PROGRAMMING">JAVA PROGRAMMING</option>
+                <option value="PERSONAL DEVELOPMENT">PERSONAL DEVELOPMENT</option>
+                <option value="ORAL COMMUNICATION IN CONTEXT">ORAL COMMUNICATION IN CONTEXT</option>
+                <option value="GEN - MATH">GEN - MATH</option>
+                <option value="SALVATION HISTORY">SALVATION HISTORY</option>
+                <option value="COMPUTER PROGRAMMING">COMPUTER PROGRAMMING</option>
+                <option value="KOMUNIKASYON AT PANANALIKSIK SA WIKA AT KULTURANG FILIPINO">KOMUNIKASYON AT PANANALIKSIK SA WIKA AT KULTURANG FILIPINO</option>
+                <option value="ENGLISH FOR ACADEMIC AND PROFESSIONAL PURPOSES">ENGLISH FOR ACADEMIC AND PROFESSIONAL PURPOSES</option>
+                <option value="Math">Math</option>
             <!-- Add more options as needed -->
         </select>
         
@@ -119,7 +119,7 @@
                 <option value="Evening">Evening</option>
             <!-- Add more options as needed -->
         </select>
-        
+            
     <?php endfor; ?>
 
 </div>
@@ -128,9 +128,9 @@
     <input type="submit" value="Add/Edit Schedule">
 </form>
 
-<h2>Search and Edit Grades</h2>
+<h2>Search and Edit Schedule</h2>
 
-<form action="search.php" method="get">
+<form action="schedule_search.php" method="get">
     <label for="student_id_search">Student ID:</label>
     <input type="text" name="student_id_search" required><br>
 
