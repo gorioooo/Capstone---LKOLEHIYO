@@ -93,23 +93,36 @@
     <input type="text" name="student_id" required>
 
     <!-- Subjects  -->
-    <div>
+    <div>   
+        <!-- Subjects and Time -->
+    <div>   
         <?php for ($i = 1; $i <= 10; $i++) : ?>
             <label class="subject-column" for="subject<?= $i ?>_select">Subject <?= $i ?>:</label>
             <select class="subject-column" name="subject<?= $i ?>_select" required>
-                <option value="Schedule1">Math</option>
-                <option value="Schedule2">Math</option>
-                <option value="Schedule3">Math</option>
-                <option value="Schedule4">Math</option>
-                <option value="Schedule5">Math</option>
-                <option value="Schedule6">Math</option>
-                <option value="Schedule7">Math</option>
-                <option value="Schedule8">Math</option>
-                <option value="Schedule9">Math</option>
+                <option value="Schedule1">FILIPINO SA PILING LARANGAN</option>
+                <option value="Schedule2">JAVA PROGRAMMING</option>
+                <option value="Schedule3">PERSONAL DEVELOPMENT</option>
+                <option value="Schedule4">ORAL COMMUNICATION IN CONTEXT</option>
+                <option value="Schedule5">GEN - MATH</option>
+                <option value="Schedule6">SALVATION HISTORY</option>
+                <option value="Schedule7">COMPUTER PROGRAMMING</option>
+                <option value="Schedule8">KOMUNIKASYON AT PANANALIKSIK SA WIKA AT KULTURANG FILIPINO</option>
+                <option value="Schedule9">ENGLISH FOR ACADEMIC AND PROFESSIONAL PURPOSES</option>
                 <option value="Schedule10">Math</option>
-                <!-- Add more options as needed -->
-            </select>
-        <?php endfor; ?>
+            <!-- Add more options as needed -->
+        </select>
+        
+        <!-- Add a time dropdown for each subject -->
+            <select class="subject-column" name="subject<?= $i ?>_time" required>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            <!-- Add more options as needed -->
+        </select>
+        
+    <?php endfor; ?>
+
+</div>
     </div>
 
     <input type="submit" value="Add/Edit Schedule">
